@@ -1,0 +1,199 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	overflow-x: scroll;
+	width: 100vw;
+}
+
+::-webkit-scrollbar {
+	scrollbar-width: none;
+}
+
+.homeca {
+	
+	
+	min-height: 100vh;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: consolas;
+	
+}
+
+
+#InputAddTodo {
+    padding : 10px;
+    width: 500px;
+}
+
+#form {
+    position:fixed;
+    left: 20px;
+    bottom: 40%;
+    z-index: 1;
+}
+
+.btn{
+	display: none;
+}
+
+#btnAdd {
+    background-color: white;
+    border: 2px solid #ff0057;
+    /* border-radius: 10px; */
+    padding : 10px;
+    margin: 20px;
+
+    
+}
+
+#btnModif {
+	background-color: white;
+    border: 2px solid #ff0057;
+    /* border-radius: 10px; */
+    padding : 10px;
+    margin: 20px;
+	position:fixed;
+	bottom: 38%;
+	left: 520px;
+    z-index: 1;
+
+}
+
+#btnDelete {
+    background-color: #ff0057;
+    padding: 10px;
+    margin: 20px;
+    font-size: 0.5em;
+    color: white;
+}
+
+.modaldelete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 110vh;
+	background: #333333b7;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+.modalModif {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 110vh;
+	background: #333333b7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.Divdelete {
+	background-color: #ff0057;
+	width: 500px;
+	text-align: center;
+    color: white;
+	padding: 20px;
+}
+
+.yes, .no {
+	margin: 20px;
+	background-color: #fff;
+	color: #ff0057;
+	padding: 10px;
+}
+
+h1 {
+	/* align-items: left;
+	display: flex; */
+    position :absolute;
+    top: 100px;
+    right: -50px;
+	background: #ff0057;
+	padding: 20px;
+	width: 1000px;
+   text-align: center;
+	transform: rotate(20deg);
+}
+
+.DayList {
+    margin-top: 100px;
+	transition: all 1s ease;
+	width: 15rem;
+	/* position: absolute; */
+	/* background: #fff; */
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	padding: 20px;
+	perspective: 10rem;
+	width: 8rem;
+	z-index: 0;
+	transform: rotate(-15deg);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	width: 60%;
+}
+
+li {
+	/* position: relative; */
+	padding: 13px;
+	transform: rotate(-8deg);
+	/* width: 100%; */
+	background: #fff;
+	display: flex;
+    height: 40px;
+}
+
+li:hover {
+	font-size: 22px;
+	color: #ff0057;
+}
+
+.DayList p {
+    background-color: #ffffff;
+    border: 2px solid #ff0057;
+    margin: 20px;
+	font-size: 20px;
+	/* position: relative; */
+	cursor: pointer;
+	overflow: hidden;
+	padding: 20px;
+	font-size: 20px;
+
+transition-duration: 1s;
+}
+
+li p {
+	/* position: relative; */
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8);
+	transform: translateX(-76px);
+}
+
+li span {
+    margin-right: 0px;
+    max-height: 40px;
+}
+ul {
+    display: flex;
+}
+
+.DayList p:hover {
+	transform: translateX(16px);
+	transform: rotate(10deg);
+}
