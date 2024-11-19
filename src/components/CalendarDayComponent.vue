@@ -115,9 +115,9 @@ function deleteMod() {
           >
             <span>{{ day.dayname }}</span>
           </li>
-          <div v v-for="(event, idEvent) in day.dayevent" :key="event">
+          <div v-for="(event, idEvent) in day.dayevent" :key="event">
             <p>
-              {{ event }}
+              {{ event }}<br>
               <button
                 @click="
                   () => {

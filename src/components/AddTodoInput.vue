@@ -42,7 +42,7 @@ function noModif() {
 <div>
 
 <form id="form" action="" @submit.prevent="MySubmitFunc">
-    <input type="text" name="addTOdo" id="InputAddTodo" :placeholder="`${load? `Modifier l'evenement du ${day}` : `Entrez le nouvelle evenement pour le ${day}`}`" v-model="NewEventDay">
+    <input type="text" name="addTOdo" id="InputAddTodo" :placeholder="`${load? `Modifier l'evenement du ${day}` : `Entrez le nouvel évenement pour le ${day}`}`" v-model="NewEventDay">
     <button id="btnAdd" :class="`${load?'btn':''}`">Ajouter</button>
 </form>
 <button id="btnModif" :class="`${load?'':'btn'}`" @click="()=>{MyModifFunction()}">modifier</button>
